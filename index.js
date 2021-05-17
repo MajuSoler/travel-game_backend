@@ -2,6 +2,9 @@ const express = require("express");
 
 const App = express();
 
+const bodyParser = express.json();
+App.use(bodyParser);
+
 const port = 4000;
 
 const scoreRouter = require("./Routers/index");
