@@ -2,7 +2,7 @@ const { Router } = require("express");
 
 const router = new Router();
 
-const Highscore = require("../models/").highscore;
+const Highscore = require("../models").highscore;
 
 router.get("/", async (req, res) => {
   const score = await Highscore.findAll();
