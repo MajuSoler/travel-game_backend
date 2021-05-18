@@ -5,7 +5,9 @@ const router = new Router();
 const Highscore = require("../models").highscore;
 
 router.get("/", async (req, res) => {
-  const score = await Highscore.findAll();
+  const score = await Highscore.findAll({
+    order: [["score", "DESC"]],
+  });
 
   const relevantData = score.map((item) => {
     return item.dataValues;
