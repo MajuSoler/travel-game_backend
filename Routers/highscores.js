@@ -7,8 +7,12 @@ const Highscore = require("../models").highscore;
 router.get("/", async (req, res) => {
   const score = await Highscore.findAll();
 
-  console.log("These are the scores", score);
-  //   res.status(200).send({ score });
+  const relevantData = score.map((item) => {
+    return item.dataValues;
+  });
+
+  //   console.log("These are the highscores", relevantData);
+  res.status(200).send(relevantData);
 });
 
 router.post("/", async (req, res) => {
