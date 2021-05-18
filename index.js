@@ -1,4 +1,5 @@
 const express = require("express");
+const corsMiddleWare = require("cors");
 
 const App = express();
 
@@ -9,6 +10,8 @@ const port = 4000;
 
 const scoreRouter = require("./Routers/highscores");
 const questionRouter = require("./Routers/questions");
+
+App.use(corsMiddleWare());
 
 App.use("/highscore", scoreRouter);
 App.use("/question", questionRouter);
