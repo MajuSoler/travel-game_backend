@@ -152,6 +152,45 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          img_url:
+            "https://res.cloudinary.com/powsitu/image/upload/v1621438243/quiz/eleni-afiontzi-xvknd8C7Kic-unsplash_yohltl.jpg",
+          question: "Balos beach can be found, on which Greek island?",
+          answer_1: "Crete",
+          answer_2: "Santorini",
+          answer_3: "Mykonos",
+          answer_4: "Rhodes",
+          correct_answer: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          img_url:
+            "https://res.cloudinary.com/powsitu/image/upload/v1621438693/quiz/pexels-chait-goli-1797161_h0n7v6.jpg",
+          question:
+            "According to tradition, Rome was founded by the twin brothers...",
+          answer_1: "Apollo and Artemis",
+          answer_2: "Ploutos and Philomelos",
+          answer_3: "Romulus and Remus",
+          answer_4: "Castor and Pollux",
+          correct_answer: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          img_url:
+            "https://res.cloudinary.com/powsitu/image/upload/v1621438957/quiz/pexels-thorsten-technoman-338515_xaispj.jpg",
+          question:
+            "Which of the following facts is not true about the Eiffel Tower?",
+          answer_1:
+            "The Eiffel Tower is a cousin of sorts to the Statue of Liberty.",
+          answer_2: "Gustave Eiffel designed the tower",
+          answer_3: "There’s a Champagne bar at the top.",
+          answer_4: "The Eiffel Tower doubled as a scientific laboratory.",
+          correct_answer: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
