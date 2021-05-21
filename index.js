@@ -6,7 +6,7 @@ const App = express();
 const bodyParser = express.json();
 App.use(bodyParser);
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const scoreRouter = require("./Routers/highscores");
 const questionRouter = require("./Routers/questions");
